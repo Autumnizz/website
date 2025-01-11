@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parreno Glass UPVC and Aluminum Works</title>
+    <!-- Add favicon -->
+    <link rel="icon" href="window.png" type="image/png">
+    <style>
+        /* General page styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333; /* Dark Gray Text */
+            background: linear-gradient(135deg, #f0f8ff, #dcdcdc); /* Light Blue background gradient */
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Center and style the h1 element with Yale Blue and a border */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            color: #0e4c92; /* Yale Blue text */
+            padding: 10px;
+            border: 2px solid #0e4c92; /* Yale Blue border */
+            border-radius: 8px;
+            background-color: #e1ecf1; /* Soft light background */
+            display: inline-block;
+        }
+
+        /* Style the paragraph text */
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+            color: #666; /* Lighter gray for paragraphs */
+        }
+
+        /* Underline styling for headers */
+        strong u {
+            font-size: 1.5em;
+            text-decoration: underline;
+            margin-top: 20px;
+            display: inline-block;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            color: #555; /* Slightly darker color for emphasis */
+        }
+
+        /* Button styles */
+        .button {
+            padding: 12px 24px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #0e4c92; /* Yale Blue button color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin: 10px 0;
+        }
+
+            .button:hover {
+                background-color: #083a6c; /* Darker Yale Blue when hovered */
+                transform: scale(1.05);
+            }
+
+            .button:focus {
+                outline: none;
+            }
+
+        /* Responsive image styling */
+        img {
+            width: 100%; /* Makes image resize based on its container */
+            height: auto; /* Maintain aspect ratio */
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Styling for work samples section */
+        .work-samples {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            gap: 20px;
+        }
+
+        .work-sample {
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+            border-radius: 8px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.8); /* Slightly translucent background */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .work-sample:hover {
+                transform: scale(1.05);
+            }
+
+            .work-sample img {
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+            }
+
+        /* Style the link */
+        a {
+            font-size: 1.2em;
+            color: #0e4c92; /* Yale Blue link color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            a:hover {
+                color: #083a6c; /* Darker Yale Blue on hover */
+                text-decoration: underline;
+            }
+
+        /* Add a horizontal line style */
+        hr {
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            margin: 40px 0;
+        }
+
+        /* Modal styling */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6); /* Dark background with opacity */
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            margin: auto;
+            background-color: #fff;
+            border: 1px solid #888;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+        /* Add padding for smaller devices */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .work-sample {
+                width: 100%;
+            }
+
+            .button {
+                width: 100%; /* Full-width buttons on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Parreno Glass UPVC and Aluminum Works</h1><br />
+
+    <strong><u>Work Background:</u></strong>
+
+    <p>
+        <i>
+            7 Years of Experience in Modular Cabinetry<br />
+            10 Years of Experience in UPVC<br />
+            5 Years of Experience in Aluminum Works<br />
+        </i>
+    </p>
+
+    <br />
+
+    <h2>Work Samples</h2>
+
+    <div class="work-samples">
+        <!-- Door Sample -->
+        <div class="work-sample">
+            <h3>Doors</h3>
+            <img src="1.png" alt="Sample Door" onclick="openModal('doorModal')">
+            <p>High-quality glass UPVC and aluminum doors designed for durability and style.</p>
+            <button class="button" onclick="openModal('doorModal')">View More</button>
+        </div>
+
+        <!-- Window Sample -->
+        <div class="work-sample">
+            <h3>Windows</h3>
+            <img src="8.png" alt="Sample Window" onclick="openModal('windowModal')">
+            <p>Modern glass UPVC and aluminum windows for every home.</p>
+            <button class="button" onclick="openModal('windowModal')">View More</button>
+        </div>
+
+        <!-- Cabinet Sample -->
+        <div class="work-sample">
+            <h3>Cabinets</h3>
+            <img src="13.png" alt="Sample Cabinet" onclick="openModal('cabinetModal')">
+            <p>Custom-built modular cabinets for every room in your home.</p>
+            <button class="button" onclick="openModal('cabinetModal')">View More</button>
+        </div>
+    </div>
+
+    <!-- Modal for Door -->
+    <div id="doorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('doorModal')">&times;</span>
+            <h3>Door Samples</h3>
+            <img src="1.png" alt="Door Sample 1" style="width: 100%; margin-bottom: 10px;">
+            <img src="2.png" alt="Door Sample 2" style="width: 100%;">
+            <img src="6.png" alt="Door Sample 2" style="width: 100%;">
+            <img src="3.png" alt="Door Sample 2" style="width: 100%;">
+            <img src="4.png" alt="Door Sample 2" style="width: 100%;">
+            <img src="5.png" alt="Door Sample 2" style="width: 100%;">
+        </div>
+    </div>
+
+    <!-- Modal for Window -->
+    <div id="windowModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('windowModal')">&times;</span>
+            <h3>Window Samples</h3>
+            <img src="8.png" alt="Window Sample" style="width: 100%; margin-bottom: 10px;" />
+            <img src="9.png" alt="Window Sample" style="width: 100%; margin-bottom: 10px;" />
+            <img src="10.png" alt="Window Sample" style="width: 100%; margin-bottom: 10px;" />
+            <img src="11.png" alt="Window Sample" style="width: 100%; margin-bottom: 10px;" />
+            <img src="12.png" alt="Window Sample" style="width: 100%; margin-bottom: 10px;" />
+        </div>
+    </div>
+
+    <!-- Modal for Cabinet -->
+    <div id="cabinetModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('cabinetModal')">&times;</span>
+            <h3>Cabinet Samples</h3>
+            <img src="13.png" alt="Cabinet Sample" style="width: 100%; margin-bottom: 10px;">
+            <img src="14.png" alt="Cabinet Sample" style="width: 100%; margin-bottom: 10px;">
+            <img src="15.png" alt="Cabinet Sample" style="width: 100%; margin-bottom: 10px;">
+            <img src="16.png" alt="Cabinet Sample" style="width: 100%; margin-bottom: 10px;">
+            <img src="17.png" alt="Cabinet Sample" style="width: 100%; margin-bottom: 10px;">
+            <img src="18.png" alt="Cabinet Sample" style="width: 100%; margin-bottom: 10px;">
+        </div>
+    </div>
+
+    <img src="card.jpg" alt="Parreno Glass UPVC and Aluminum Works Logo">
+
+    <hr />
+
+    <p>Visit our Facebook Page:</p>
+    <a href="https://www.facebook.com/profile.php?id=61556251312342">
+        Parreno Glass UPVC and Aluminum Works
+    </a>
+
+    <script>
+        // Open modal
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+        }
+
+        // Close modal
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "none";
+        }
+
+        // Close modal if clicked outside the modal content
+        window.onclick = function (event) {
+            var modals = document.getElementsByClassName("modal");
+            for (var i = 0; i < modals.length; i++) {
+                if (event.target == modals[i]) {
+                    modals[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>
